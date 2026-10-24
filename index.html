@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of S Annapoorani, Computer Science Student from Coimbatore, Tamil Nadu.">
+  <title>S Annapoorani | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="nav">
+    <a href="#home" class="logo" aria-label="S Annapoorani Home">SA</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+    <nav id="navLinks" aria-label="Main Navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+      <button id="themeBtn" class="theme-btn" aria-label="Toggle dark mode">&#9790;</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="hello">Hello, I'm</p>
+        <h1>S Annapoorani</h1>
+        <h2>I'm a <span id="typed">Problem Solver</span><span class="cursor" aria-hidden="true">|</span></h2>
+        <p class="lead">Motivated computer science student with a foundation in C, Python, Java and JavaScript, seeking an entry-level opportunity to apply my skills and keep learning.</p>
+        <div class="btns">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn">Contact Me</a>
+          <a href="S_Annapoorani_Resume.pdf" class="btn" download="S_Annapoorani_Resume.pdf">Download Resume</a>
+        </div>
+      </div>
+      <div class="avatar" aria-label="Initials placeholder for S Annapoorani">SA</div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section reveal">
+      <h3 class="title">About Me</h3>
+      <p class="about-desc">I am a computer science student from Coimbatore, Tamil Nadu. I enjoy building practical programs, understanding data structures, and exploring cloud and process mining tools. I have completed certifications on Coursera, Celonis Academy, ICT Academy and FutureSkills Prime, and I am always looking for new things to learn.</p>
+      <div class="stats">
+        <div class="stat-card"><strong>13</strong><span>Certifications</span></div>
+        <div class="stat-card"><strong>4</strong><span>Languages Coded</span></div>
+        <div class="stat-card"><strong>2</strong><span>Projects</span></div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="section reveal">
+      <h3 class="title">Technical Skills</h3>
+      <div class="skills">
+        <div class="skill">
+          <div class="skill-meta"><span>C</span><span>75%</span></div>
+          <div class="bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="C proficiency 75%"><i data-w="75"></i></div>
+        </div>
+        <div class="skill">
+          <div class="skill-meta"><span>Python</span><span>80%</span></div>
+          <div class="bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Python proficiency 80%"><i data-w="80"></i></div>
+        </div>
+        <div class="skill">
+          <div class="skill-meta"><span>Java</span><span>75%</span></div>
+          <div class="bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Java proficiency 75%"><i data-w="75"></i></div>
+        </div>
+        <div class="skill">
+          <div class="skill-meta"><span>JavaScript</span><span>70%</span></div>
+          <div class="bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript proficiency 70%"><i data-w="70"></i></div>
+        </div>
+      </div>
+      <p class="muted">Languages known: Tamil, English</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section reveal">
+      <h3 class="title">Projects</h3>
+      <div class="cards">
+        <article class="card">
+          <h4>Scholarship Eligibility Verification and Shortlisting</h4>
+          <p>A system that checks applicants against scholarship criteria and shortlists the eligible candidates.</p>
+          <a href="https://github.com/Annapoorani1208/mini-project" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
+        </article>
+        <article class="card">
+          <h4>String Utility Box</h4>
+          <p>A collection of handy string operations bundled into one easy-to-use utility toolkit.</p>
+          <a href="https://github.com/Annapoorani1208" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Academic Performance Section -->
+    <section id="education" class="section reveal">
+      <h3 class="title">Academic Performance</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Semester</th>
+              <th class="marks-col">Marks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1st Semester</td>
+              <td class="marks-col">62</td>
+            </tr>
+            <tr>
+              <td>2nd Semester</td>
+              <td class="marks-col">71</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section reveal">
+      <h3 class="title">Certifications / Courses</h3>
+      <ul class="certs" id="certList"></ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section reveal">
+      <h3 class="title">Contact</h3>
+      <div class="contact-grid">
+        <div class="info">
+          <p><b>Email:</b> <a href="mailto:annapooranis298@gmail.com">annapooranis298@gmail.com</a></p>
+          <p><b>Phone:</b> <a href="tel:+917010638913">+91 70106 38913</a></p>
+          <p><b>Location:</b> Coimbatore, Tamil Nadu</p>
+          <p><b>GitHub:</b> <a href="https://github.com/Annapoorani1208" target="_blank" rel="noopener noreferrer">github.com/Annapoorani1208</a></p>
+        </div>
+        <form id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="cName" class="sr-only">Your Name</label>
+            <input 
+              type="text" 
+              id="cName" 
+              name="name" 
+              placeholder="Your name" 
+              required 
+              pattern="^[A-Za-z]+(?: [A-Za-z]+)*$" 
+              title="Please enter a valid name with alphabetic letters and single spaces between words (e.g. S Annapoorani)."
+              autocomplete="name"
+            >
+            <span class="field-error" id="nameError" aria-live="polite"></span>
+          </div>
+          <div class="form-group">
+            <label for="cEmail" class="sr-only">Your Email</label>
+            <input 
+              type="email" 
+              id="cEmail" 
+              name="email" 
+              placeholder="Your email" 
+              required 
+              autocomplete="email"
+            >
+          </div>
+          <div class="form-group">
+            <label for="cMsg" class="sr-only">Your Message</label>
+            <textarea 
+              id="cMsg" 
+              name="message" 
+              rows="4" 
+              placeholder="Your message" 
+              required
+            ></textarea>
+          </div>
+          <p class="error" id="formError" role="alert"></p>
+          <div id="formStatus" class="form-status" role="status"></div>
+          <button type="submit" class="btn primary btn-submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>&copy; <span id="year">2026</span> S Annapoorani. All rights reserved.</footer>
+
+  <!-- Back to Top Button -->
+  <button id="topBtn" aria-label="Back to top">&uarr;</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
